@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Horse Racing 2</title>
+</head>
+<body>
+    <!-- Horse images. -->
+    <img src="/images/horse0.png" id="horse0" />
+    <img src="/images/horse1.png" id="horse1" />
+    <img src="/images/horse2.png" id="horse2" />
+    <img src="/images/horse3.png" id="horse3" />
+    <img src="/images/horse4.png" id="horse4" />
+    <img src="/images/horse5.png" id="horse5" />
+
+    <!-- Main game canvas. -->
+    <canvas id="canvas"></canvas>
+    
+    <!-- Name submission form. -->
+    <form id="form" action="">
+        <input id="input" autocomplete="off" placeholder="What is the name of your horse?">
+        <button>Send</button>
+    </form>
+
+    <!-- Load the socket.io-client, which exposes an io global. -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Load the application. -->
+    <script src="app.js"></script>
+</body>
+</html>
